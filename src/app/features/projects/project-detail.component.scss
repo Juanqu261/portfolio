@@ -1,0 +1,166 @@
+.detail {
+  padding: 3rem 1rem 4rem;
+  max-width: 880px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.detail-head {
+  margin-bottom: 2rem;
+
+  h1 {
+    margin: 0 0 0.4rem;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    letter-spacing: -0.02em;
+  }
+
+  .year-line {
+    color: var(--text-muted);
+    margin: 0 0 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+  }
+
+  .desc {
+    margin: 0 0 1rem;
+    line-height: 1.6;
+  }
+}
+
+.tech {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-badge {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-3);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  &:hover {
+    border-color: var(--accent);
+  }
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent);
+}
+
+.block {
+  margin-top: 2.5rem;
+
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin: 0 0 0.9rem;
+  }
+}
+
+.highlights {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  line-height: 1.55;
+}
+
+.readme {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  line-height: 1.6;
+
+  :first-child { margin-top: 0; }
+  :last-child { margin-bottom: 0; }
+
+  h1, h2, h3, h4 {
+    letter-spacing: -0.01em;
+    margin-top: 1.5em;
+  }
+
+  pre {
+    background: var(--surface-4);
+    border: 1px solid var(--border);
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+  }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.88em;
+    background: var(--surface-4);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+  }
+
+  pre code {
+    background: transparent;
+    padding: 0;
+  }
+
+  a {
+    color: var(--accent);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.6rem;
+    text-align: left;
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Portafolio",
+    "tagline": "Ingeniero de software · constructor de productos full-stack e impulsados por IA"
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "switchToSpanish": "Cambiar a inglés",
+    "toggleTheme": "Cambiar tema"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Juan Quintero",
+    "role": "Estudiante de Ingeniería de Sistemas y desarrollador full-stack",
+    "pitch": "Construyo plataformas web pragmáticas — desde backends en Django y FastAPI hasta frontends en Angular — con un especial gusto por flujos impulsados por IA.",
+    "ctaProjects": "Ver proyectos",
+    "ctaContact": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Una carta de presentación breve — CV completo disponible bajo solicitud.",
+    "education": {
+      "title": "Educación",
+      "items": [
+        "Estudiante de Ingeniería de Sistemas en la Universidad Nacional de Colombia — graduación esperada en 2027",
+        "Materias relevantes: estructuras de datos, algoritmos, estadística, IA/ML"
+      ]
+    },
+    "experience": {
+      "title": "Experiencia",
+      "items": [
+        "Desarrollador de Software en Abidata — 1 año, proyectos privados de desarrollo web y automatizaciones RPA en Python",
+        "Proyectos freelance / personales — apps web full-stack (Django, Angular, FastAPI)"
+      ]
+    },
+    "skills": {
+      "title": "Habilidades",
+      "items": ["Python", "TypeScript", "Angular", "Django", "FastAPI", "PostgreSQL", "Docker", "Herramientas LLM"]
+    },
+    "interests": {
+      "title": "Explorando ahora",
+      "items": ["Herramientas de desarrollo agéntico", "Backends impulsados por LLM", "DX para equipos pequeños"]
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de cosas que he construido recientemente.",
+    "techLabel": "Stack",
+    "highlightsLabel": "Lo destacado",
+    "viewCode": "Ver código",
+    "viewDemo": "Ver demo",
+    "viewDetails": "Más detalles",
+    "yearLabel": "Año"
+  },
+  "detail": {
+    "back": "Volver a proyectos",
+    "readmeTitle": "README del proyecto",
+    "readmeMissing": "No hay README incluido para este proyecto — revisa el repositorio en GitHub."
+  },
+  "footer": {
+    "builtWith": "Hecho con Angular. Código en GitHub.",
+    "rights": "Todos los derechos reservados."
+  }
+}

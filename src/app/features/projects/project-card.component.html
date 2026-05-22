@@ -1,0 +1,56 @@
+<article class="card">
+  <header class="card-head">
+    <h3 class="card-title">{{ project().name }}</h3>
+    <span class="year" [attr.aria-label]="i18n.t('projects.yearLabel')">
+      {{ project().yearCompleted }}
+    </span>
+  </header>
+
+  <p class="card-desc">{{ project().description }}</p>
+
+  <ul class="tech" [attr.aria-label]="i18n.t('projects.techLabel')">
+    @for (tech of project().techStack; track tech) {
+      <li class="tech-badge">{{ tech }}</li>
+    }
+  </ul>
+
+  @if (topHighlights().length) {
+    <ul class="highlights">
+      @for (h of topHighlights(); track h) {
+        <li>{{ h }}</li>
+      }
+    </ul>
+  }
+
+  <footer class="card-actions">
+    <a
+      [routerLink]="detailLink()"
+      class="btn btn-primary"
+    >
+      {{ i18n.t('projects.viewDetails') }}
+    </a>
+    <a
+      [href]="project().github"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn"
+    >
+      {{ i18n.t('projects.viewCode') }}
+    </a>
+    @if (project().demo) {
+      <a
+        [href]="project().demo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn"
+      >
+        {{ i18n.t('projects.viewDemo') }}
+      </a>
+    }
+    @for (link of project().extraLinks; track link.url) {
+      <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="btn">
+        {{ link.label }}
+      </a>
+    }
+  </footer>
+</article>

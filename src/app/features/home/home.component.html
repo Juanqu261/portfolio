@@ -1,0 +1,27 @@
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="greeting">{{ i18n.t('hero.greeting') }}</p>
+    <h1 class="name">{{ i18n.t('hero.name') }}</h1>
+    <p class="role">{{ i18n.t('hero.role') }}</p>
+    <p class="pitch">{{ i18n.t('hero.pitch') }}</p>
+
+    <div class="cta">
+      <a href="#projects" class="btn btn-primary">{{ i18n.t('hero.ctaProjects') }}</a>
+      <a href="#contact" class="btn">{{ i18n.t('hero.ctaContact') }}</a>
+    </div>
+  </div>
+</section>
+
+<app-about />
+
+<app-project-list />
+
+<section id="contact" class="contact container" aria-labelledby="contact-title">
+  <h2 id="contact-title">{{ i18n.t('nav.contact') }}</h2>
+  <p>
+    <a href="mailto:jfquintero261@gmail.com">jfquintero261&#64;gmail.com</a>
+  </p>
+  <p class="muted small">
+    <a href="https://github.com/Juanqu261" target="_blank" rel="noopener noreferrer">github.com/Juanqu261</a>
+  </p>
+</section>

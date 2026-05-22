@@ -1,0 +1,45 @@
+<!-- TODO: replace placeholder content in assets/i18n/{en,es}.json under the "about" key -->
+<section id="about" class="about container" aria-labelledby="about-title">
+  <header class="about-head">
+    <h2 id="about-title">{{ i18n.t('about.title') }}</h2>
+    <p class="muted">{{ i18n.t('about.subtitle') }}</p>
+  </header>
+
+  <div class="about-grid">
+    <article class="about-block">
+      <h3>{{ i18n.t('about.education.title') }}</h3>
+      <ul>
+        @for (item of i18n.tList('about.education.items'); track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+
+    <article class="about-block">
+      <h3>{{ i18n.t('about.experience.title') }}</h3>
+      <ul>
+        @for (item of i18n.tList('about.experience.items'); track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+
+    <article class="about-block">
+      <h3>{{ i18n.t('about.skills.title') }}</h3>
+      <ul class="badges">
+        @for (item of i18n.tList('about.skills.items'); track item) {
+          <li class="badge">{{ item }}</li>
+        }
+      </ul>
+    </article>
+
+    <article class="about-block">
+      <h3>{{ i18n.t('about.interests.title') }}</h3>
+      <ul>
+        @for (item of i18n.tList('about.interests.items'); track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+  </div>
+</section>

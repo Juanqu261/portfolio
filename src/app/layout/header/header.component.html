@@ -1,0 +1,35 @@
+<header class="site-header" role="banner">
+  <div class="container">
+    <a [routerLink]="homeLink()" class="brand" [attr.aria-label]="i18n.t('meta.title')">
+      <span class="brand-mark">JQ</span>
+      <span class="brand-text">{{ i18n.t('meta.title') }}</span>
+    </a>
+
+    <nav class="nav" [attr.aria-label]="i18n.t('nav.projects')">
+      <a [routerLink]="homeLink()" fragment="about">{{ i18n.t('nav.about') }}</a>
+      <a [routerLink]="homeLink()" fragment="projects">{{ i18n.t('nav.projects') }}</a>
+      <a [routerLink]="homeLink()" fragment="contact">{{ i18n.t('nav.contact') }}</a>
+    </nav>
+
+    <div class="actions">
+      <button
+        type="button"
+        class="icon-button lang-toggle"
+        (click)="switchLang()"
+        [attr.aria-label]="i18n.t('nav.switchToSpanish')"
+        [title]="i18n.t('nav.switchToSpanish')"
+      >
+        <span aria-hidden="true">{{ otherLang().toUpperCase() }}</span>
+      </button>
+      <button
+        type="button"
+        class="icon-button theme-toggle"
+        (click)="theme.toggle()"
+        [attr.aria-label]="i18n.t('nav.toggleTheme')"
+        [title]="i18n.t('nav.toggleTheme')"
+      >
+        <span aria-hidden="true">{{ theme.theme() === 'dark' ? '☾' : '☀' }}</span>
+      </button>
+    </div>
+  </div>
+</header>

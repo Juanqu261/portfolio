@@ -1,0 +1,57 @@
+<section class="detail container">
+  <a [routerLink]="backLink()" class="back-link">← {{ i18n.t('detail.back') }}</a>
+
+  @if (project(); as p) {
+    <header class="detail-head">
+      <h1>{{ p.name }}</h1>
+      <p class="year-line">{{ i18n.t('projects.yearLabel') }}: {{ p.yearCompleted }}</p>
+      <p class="desc">{{ p.description }}</p>
+
+      <ul class="tech" [attr.aria-label]="i18n.t('projects.techLabel')">
+        @for (tech of p.techStack; track tech) {
+          <li class="tech-badge">{{ tech }}</li>
+        }
+      </ul>
+
+      <div class="actions">
+        <a [href]="p.github" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          {{ i18n.t('projects.viewCode') }}
+        </a>
+        @if (p.demo) {
+          <a [href]="p.demo" target="_blank" rel="noopener noreferrer" class="btn">
+            {{ i18n.t('projects.viewDemo') }}
+          </a>
+        }
+        @for (link of p.extraLinks; track link.url) {
+          <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="btn">
+            {{ link.label }}
+          </a>
+        }
+      </div>
+    </header>
+
+    @if (p.highlights.length) {
+      <section class="block">
+        <h2>{{ i18n.t('projects.highlightsLabel') }}</h2>
+        <ul class="highlights">
+          @for (h of p.highlights; track h) {
+            <li>{{ h }}</li>
+          }
+        </ul>
+      </section>
+    }
+
+    <section class="block readme-block">
+      <h2>{{ i18n.t('detail.readmeTitle') }}</h2>
+      @if (readmeLoading()) {
+        <p class="muted">…</p>
+      } @else if (readmeHtml()) {
+        <div class="readme" [innerHTML]="readmeHtml()"></div>
+      } @else {
+        <p class="muted">{{ i18n.t('detail.readmeMissing') }}</p>
+      }
+    </section>
+  } @else {
+    <p class="muted">404</p>
+  }
+</section>
