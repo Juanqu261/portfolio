@@ -26,22 +26,6 @@ npm run build
 
 Output: `dist/portfolio/browser/`.
 
-## Deploy to GitHub Pages
-
-1. Create a GitHub repo named `portfolio` and push this code.
-2. Run:
-
-   ```bash
-   npm run deploy
-   ```
-
-   This builds with `--base-href /portfolio/` and publishes `dist/portfolio/browser/` to the `gh-pages` branch via [`angular-cli-ghpages`](https://github.com/angular-schule/angular-cli-ghpages).
-
-3. In the repo settings, enable GitHub Pages from the `gh-pages` branch.
-4. Site will be live at `https://<your-user>.github.io/portfolio/`.
-
-> `src/404.html` is published alongside `index.html` so that deep links (e.g. `/portfolio/en/projects/project-3`) survive a hard refresh.
-
 ## Structure
 
 ```
