@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Portfolio",
+    "tagline": "Software engineer · builder of full-stack & AI-driven products"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "switchToSpanish": "Switch to Spanish",
+    "toggleTheme": "Toggle theme"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Juan Quintero",
+    "role": "Systems Engineering student & full-stack developer",
+    "pitch": "I build pragmatic web platforms — from Django and FastAPI backends to Angular frontends — with a soft spot for AI-driven workflows.",
+    "ctaProjects": "See projects",
+    "ctaContact": "Get in touch"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "A short presentation card — long-form CV available on request.",
+    "education": {
+      "title": "Education",
+      "items": [
+        "Systems Engineering student at Universidad Nacional de Colombia — expected graduation 2027",
+        "Relevant coursework: data structures, algorithms, statistics, AI/ML"
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "items": [
+        "Software Developer at Abidata — 1 year, private projects covering web development and Python RPA automations",
+        "Freelance / personal projects — full-stack web apps (Django, Angular, FastAPI)"
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "items": ["Python", "TypeScript", "Angular", "Django", "FastAPI", "PostgreSQL", "Docker", "LLM tooling"]
+    },
+    "interests": {
+      "title": "Currently exploring",
+      "items": ["Agentic developer tooling", "LLM-driven backends", "DX for small teams"]
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of things I've built recently.",
+    "techLabel": "Stack",
+    "highlightsLabel": "Highlights",
+    "viewCode": "View code",
+    "viewDemo": "View demo",
+    "viewDetails": "More details",
+    "yearLabel": "Year"
+  },
+  "detail": {
+    "back": "Back to projects",
+    "readmeTitle": "Project README",
+    "readmeMissing": "No README is bundled for this project — see the GitHub repository."
+  },
+  "footer": {
+    "builtWith": "Built with Angular. Source on GitHub.",
+    "rights": "All rights reserved."
+  }
+}

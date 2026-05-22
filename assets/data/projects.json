@@ -1,0 +1,161 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "name": "BrokerWiz",
+      "github": "https://github.com/Juanqu261/bots_brokerwiz",
+      "demo": null,
+      "description": {
+        "en": "Insurance-quote automation platform: Selenium bots orchestrated through an MQTT task queue and a FastAPI REST gateway.",
+        "es": "Sistema de automatización para cotización de seguros usando bots Selenium, con API REST en FastAPI y cola de tareas MQTT."
+      },
+      "techStack": ["FastAPI", "MQTT", "Selenium"],
+      "highlights": {
+        "en": [
+          "MQTT broker for task fan-out and worker management",
+          "Selenium bot orchestration via shell scripts and utility layers",
+          "FastAPI REST gateway for triggering and tracking quotes"
+        ],
+        "es": [
+          "Broker MQTT para distribución de tareas y gestión de workers",
+          "Orquestación de bots Selenium con scripts y utilidades",
+          "API REST en FastAPI para iniciar y consultar cotizaciones"
+        ]
+      },
+      "yearCompleted": 2026,
+      "readmePath": {
+        "en": "assets/data/readmes/project-1.en.md",
+        "es": "assets/data/readmes/project-1.es.md"
+      },
+      "sourceLanguage": "es",
+      "extraLinks": []
+    },
+    {
+      "id": "project-2",
+      "name": "Explore Antioquia",
+      "github": "https://github.com/juquinterope/Explore_antioquia",
+      "demo": null,
+      "description": {
+        "en": "Travel app that uses tourism data to suggest personalized itineraries, food picks, and activities based on each user's preferences.",
+        "es": "App turística que usa datos para sugerir itinerarios personalizados, recomendaciones gastronómicas y actividades según las preferencias del usuario."
+      },
+      "techStack": ["Django", "Leaflet", "NLTK"],
+      "highlights": {
+        "en": [
+          "Interactive maps via Google Maps API + Leaflet",
+          "Django backend handling all data and services",
+          "NLP and ML for personalized recommendations"
+        ],
+        "es": [
+          "Mapas interactivos con Google Maps API + Leaflet",
+          "Backend Django gestionando datos y servicios",
+          "NLP y machine learning para recomendaciones personalizadas"
+        ]
+      },
+      "yearCompleted": 2024,
+      "readmePath": {
+        "en": "assets/data/readmes/project-2.en.md",
+        "es": "assets/data/readmes/project-2.es.md"
+      },
+      "sourceLanguage": "es",
+      "extraLinks": []
+    },
+    {
+      "id": "project-3",
+      "name": "Serenus",
+      "github": "https://github.com/Juanqu261/serenus",
+      "demo": null,
+      "description": {
+        "en": "Application for prevention of and support against student stress, combining analytics with an AI companion chatbot.",
+        "es": "Aplicación para la prevención y acompañamiento del estrés estudiantil, combinando analítica con un chatbot de acompañamiento."
+      },
+      "techStack": ["Django", "React", "Google Gemini API"],
+      "highlights": {
+        "en": [
+          "AI-driven detection of academic stress patterns",
+          "Django backend managing all data and services",
+          "Companion chatbot powered by Google Gemini"
+        ],
+        "es": [
+          "Identificación de patrones de estrés académico mediante IA",
+          "Backend Django gestionando datos y servicios",
+          "Chatbot de acompañamiento con Google Gemini"
+        ]
+      },
+      "yearCompleted": 2025,
+      "readmePath": {
+        "en": "assets/data/readmes/project-3.en.md",
+        "es": "assets/data/readmes/project-3.es.md"
+      },
+      "sourceLanguage": "es",
+      "extraLinks": []
+    },
+    {
+      "id": "project-4",
+      "name": "Agentic Dev",
+      "github": "https://github.com/Juanqu261/agentic_dev",
+      "demo": null,
+      "description": {
+        "en": "A decentralized, multi-user environment where teams of humans and AI agents collaborate on a single codebase.",
+        "es": "Un entorno descentralizado y multiusuario donde equipos de humanos y agentes de IA colaboran sobre una misma base de código."
+      },
+      "techStack": ["FastAPI", "CopilotKit", "LangGraph"],
+      "highlights": {
+        "en": [
+          "LangGraph for agent orchestration and coordination",
+          "FastAPI backend handling user and agent interactions",
+          "MCP integrations and Git tooling for seamless collaboration"
+        ],
+        "es": [
+          "LangGraph para orquestación y coordinación de agentes",
+          "Backend FastAPI gestionando interacciones de usuarios y agentes",
+          "Integraciones MCP y herramientas Git para colaboración fluida"
+        ]
+      },
+      "yearCompleted": 2026,
+      "readmePath": {
+        "en": "assets/data/readmes/project-4.en.md",
+        "es": "assets/data/readmes/project-4.es.md"
+      },
+      "sourceLanguage": "en",
+      "extraLinks": []
+    },
+    {
+      "id": "project-5",
+      "name": "Adagioz & Harmonie",
+      "github": "https://github.com/Juanqu261/AH-frontend",
+      "demo": null,
+      "description": {
+        "en": "Editorial luxury-fragrance catalog: an ultra-premium Angular storefront backed by an Express + Prisma service syncing with Shopify and generating product copy via LLM.",
+        "es": "Catálogo editorial de fragancias de lujo: tienda Angular ultra-premium respaldada por un servicio Express + Prisma que sincroniza con Shopify y genera copy de productos con LLM."
+      },
+      "techStack": ["Angular", "Tailwind", "GSAP", "Express", "Prisma"],
+      "highlights": {
+        "en": [
+          "Editorial Angular catalog with GSAP-powered animations",
+          "Express + Prisma backend with Shopify API sync",
+          "LLM-driven product description generation",
+          "Two-service architecture (frontend + backend) deployed independently"
+        ],
+        "es": [
+          "Catálogo editorial en Angular con animaciones GSAP",
+          "Backend en Express + Prisma con sincronización vía Shopify API",
+          "Generación de descripciones de producto con LLM",
+          "Arquitectura de dos servicios (frontend + backend) desplegados de forma independiente"
+        ]
+      },
+      "yearCompleted": 2026,
+      "readmePath": {
+        "en": "assets/data/readmes/project-6.en.md",
+        "es": "assets/data/readmes/project-6.es.md"
+      },
+      "sourceLanguage": "en",
+      "extraLinks": [
+        {
+          "url": "https://github.com/Juanqu261/AH-backend",
+          "label": { "en": "Backend repo", "es": "Repo del backend" }
+        }
+      ]
+    }
+  ]
+}
