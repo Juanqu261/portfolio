@@ -26,6 +26,18 @@ npm run build
 
 Output: `dist/portfolio/browser/`.
 
+## Deploy to GitHub Pages
+
+1. On main branch:
+
+   ```bash
+   npm run deploy
+   ```
+
+   This builds with `--base-href /portfolio/` and publishes `dist/portfolio/browser/` to the `gh-pages` branch via [`angular-cli-ghpages`](https://github.com/angular-schule/angular-cli-ghpages).
+
+> `src/404.html` is published alongside `index.html` so that deep links (e.g. `/portfolio/en/projects/project-3`) survive a hard refresh.
+
 ## Structure
 
 ```
