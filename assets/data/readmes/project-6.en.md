@@ -1,48 +1,61 @@
-# Adagioz & Harmonie Frontend
+# Aligo Mission Ledger C2
 
-This is the Angular 19 frontend application for the Adagioz & Harmonie luxury fragrance catalog. It serves as an ultra-premium, editorial-style showcase designed to capture the essence of a high-end reseller boutique.
+An **authorized-lab** C2 (Command & Control) platform with a blockchain **proof-of-execution**
+ledger. Built for the **Aligo Defensores Informáticos** hackathon.
 
-## Architectural & Style Election
+It orchestrates modular nodes with safe plugins, reusable missions, verifiable evidence anchored
+on-chain, and an AI agent that proposes missions under human approval.
 
-The design direction follows the **"Flacon Brut" (Modern Avant-Garde)** concept to evoke an exclusive luxury feel. 
-Key design pillars include:
+> **For closed, authorized lab use only.** This is not malware nor an offensive tool.
 
-*   **Color Protocol (60-30-10 Dark Mode)**:
-    *   **60% Charcoal Foundation**: `#121212` / `#1A1A1A` for deep, mysterious backgrounds.
-    *   **30% Deep Purple**: Base `#2B1B3D`, Glow `#4A2D6B`, Light `#6B3FA0` — used for backgrounds, borders, and icons respectively.
-    *   **10% Brushed Silver**: `#E5E4E2` for sharp, architectural text styling and structural accents.
-*   **Typography**: A mix of *Cormorant Garamond* (massive, italicized headers) and *Outfit* (clean, legible body copy).
-*   **Animations**: Powered by **GSAP** (GreenSock) and ScrollTrigger to deliver slow, elegant cinematic fade-ins and staggered scroll reveals.
-*   **Styling**: Customized raw CSS paired with Tailwind CSS utilities.
+---
 
-## Site Configuration (`public/site.config.json`)
+## 🧩 Components
 
-A single JSON file drives all merchandising across the application. Editing this file controls:
+- **Server / API** — FastAPI with Swagger docs and a WebSocket channel for real-time node control.
+- **Nodes** — modular agents with registration, execution policies, plugins, and health reporting.
+- **Blockchain ledger** — a contract deployed on Hardhat that anchors the hash of every execution, making evidence verifiable and tamper-evident.
+- **IoT gateway** — simulated sensors and actuators wired into the same mission flow.
+- **AI agent** — a Claude-based orchestrator that proposes missions; every execution requires explicit human approval.
+- **Dashboard** — frontend for launching missions, tracking nodes, and auditing evidence.
 
-*   **`spottedProduct`**: The product slug shown as the hero spotlight on the home page.
-*   **`catalogRecommendations`**: An array of up to 10 product slugs displayed in the Catalog "open book" view.
-*   **`collections`**: An array of collection objects (slug, name, description, products). Adding or removing an entry creates or removes the corresponding collection view entirely.
+---
 
-Product slugs in this config must match the `formatNameForUrl()` output (lowercase, hyphenated) of the actual product names from the backend.
+## 🛠 Tech Stack
 
-## Core Features & Components
+- **Backend:** Python 3.12+ · FastAPI · WebSocket
+- **Blockchain:** Hardhat (Ethereum) · proof-of-execution contract
+- **Frontend:** Node.js 20+ · npm
+- **Infrastructure:** local, Docker, and Google Cloud deployments
 
-This application operates strictly under a **"Catalog Mode"** business rule. Direct sales are not handled natively; instead, users are seamlessly funneled to official external boutique endpoints via safe, SEO-friendly routing (`/products/:name`).
+---
 
-Important modules include:
+## 🚀 Quick start
 
-*   **`HomeComponent`**: Landing page with brand presentation and a **spotted product** hero section driven by `site.config.json`.
-*   **`CollectionListComponent`** (`/collections`): Displays a grid of collection cards read from the JSON config. Each card links to `/collections/:slug`.
-*   **`CollectionDetailComponent`** (`/collections/:slug`): Individual collection page showing only the products assigned to that collection in the config. Redirects to `/collections` if the slug doesn't exist in the JSON.
-*   **`CatalogComponent`** (`/catalog`): The "open book" curated showcase displaying up to 10 recommended products from `catalogRecommendations`.
-*   **`ProductDetailComponent` (PDP)**: A deep-dive experience utilizing an "Extreme Tension" layout. The flacon image is pinned to the screen while editorial copy scrolls. Includes visual representations of the fragrance's distinct Olfactory Structure (Top, Heart, and Base notes).
-*   **`NavbarComponent` / `FooterComponent`** *(shared)*: Both are standalone components mounted globally in `app.component.html`, above and below the `<router-outlet>`. They persist across all routes — do **not** add them to individual page templates.
+```bash
+cp .env.example .env
+python dev.py
+```
 
-## Key Implementation Decisions
+That boots the Hardhat chain, deploys the contract, and starts the API server, the frontend,
+simulated nodes, and the IoT gateway. Then open:
 
-*   **Product routing** uses `/products/:name` (SEO-friendly slugs). The PDP does **not** call a backend search endpoint. Instead, it fetches a batch of products and maps the URL slug to the correct product in-memory via `formatNameForUrl(product.name)`. This is intentional — the backend search had lossy string matching.
-*   **Config-driven views**: Collections, catalog recommendations, and the spotted product are all managed through `src/assets/site.config.json`. The `SiteConfigService` loads and caches this config as Angular signals.
+- **Dashboard:** https://127.0.0.1:5173
+- **API (Swagger):** https://127.0.0.1:8000/docs
 
-## Development Server
+Useful flags: `python dev.py --no-tls`, `python dev.py --no-iot`, `python dev.py --help`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files. Note: The backend API must be running concurrently to serve catalog data.
+---
+
+## 📚 Documentation
+
+The repository ships detailed technical docs under [`docs/`](https://github.com/ybedoyab/aligo-c2/tree/main/docs):
+architecture and WebSocket protocol, ledger and evidence verification, node registration and
+policies, the IoT gateway, lab-safe vulnerability scanning, threat model and ethical boundaries,
+deployment guides, and the demo script.
+
+---
+
+## 👥 Team UNcontrolled
+
+Yulian Bedoya · Alejandro Feria · Marycielo Berrio · Juan Fernando Quintero · Yulieth Urrego
