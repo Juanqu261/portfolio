@@ -25,6 +25,11 @@ export class PortfolioService {
     return this.raw().map((p) => localizeProject(p, lang));
   });
 
+  /** Projects shown in the grid. Hidden ones stay reachable by direct URL. */
+  readonly visibleProjects = computed<Project[]>(() =>
+    this.projects().filter((p) => !p.hidden),
+  );
+
   async load(): Promise<void> {
     if (this.loadPromise) return this.loadPromise;
     this.loadPromise = firstValueFrom(

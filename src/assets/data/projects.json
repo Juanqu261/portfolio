@@ -1,91 +1,65 @@
 {
   "projects": [
     {
-      "id": "project-1",
-      "name": "BrokerWiz",
-      "github": "https://github.com/Juanqu261/bots_brokerwiz",
+      "id": "project-7",
+      "name": "EduCAPTCHA",
+      "github": "https://github.com/ybedoyab/educaptcha",
       "demo": null,
       "description": {
-        "en": "Insurance-quote automation platform: Selenium bots orchestrated through an MQTT task queue and a FastAPI REST gateway.",
-        "es": "Sistema de automatización para cotización de seguros usando bots Selenium, con API REST en FastAPI y cola de tareas MQTT."
+        "en": "Media-literacy CAPTCHA for social feeds: LangGraph agents score risk signals in a post and the backend decides whether to open a short educational challenge before the user acts.",
+        "es": "CAPTCHA de alfabetización mediática para redes sociales: agentes LangGraph analizan señales de riesgo en una publicación y el backend decide si abrir un reto educativo breve antes de que el usuario actúe."
       },
-      "techStack": ["FastAPI", "MQTT", "Selenium"],
+      "techStack": ["React", "FastAPI", "LangGraph", "Gemini"],
       "highlights": {
         "en": [
-          "MQTT broker for task fan-out and worker management",
-          "Selenium bot orchestration via shell scripts and utility layers",
-          "FastAPI REST gateway for triggering and tracking quotes"
+          "LangGraph specialist agents for text, image, and chart risk signals",
+          "FastAPI policy gates decide when to intervene and which challenge to open",
+          "Host-agnostic design proven with simulated social-feed skins",
+          "Built for the UNESCO Youth Hackathon 2026"
         ],
         "es": [
-          "Broker MQTT para distribución de tareas y gestión de workers",
-          "Orquestación de bots Selenium con scripts y utilidades",
-          "API REST en FastAPI para iniciar y consultar cotizaciones"
+          "Agentes especialistas LangGraph para señales de riesgo en texto, imagen y gráficas",
+          "Políticas en FastAPI que deciden cuándo intervenir y qué reto abrir",
+          "Diseño agnóstico a la plataforma, probado con skins simulados de feeds sociales",
+          "Desarrollado para el UNESCO Youth Hackathon 2026"
         ]
       },
       "yearCompleted": 2026,
       "readmePath": {
-        "en": "assets/data/readmes/project-1.en.md",
-        "es": "assets/data/readmes/project-1.es.md"
+        "en": "assets/data/readmes/project-7.en.md",
+        "es": "assets/data/readmes/project-7.es.md"
       },
-      "sourceLanguage": "es",
+      "sourceLanguage": "en",
       "extraLinks": []
     },
     {
-      "id": "project-2",
-      "name": "Explore Antioquia",
-      "github": "https://github.com/juquinterope/Explore_antioquia",
+      "id": "project-6",
+      "name": "Aligo Mission Ledger C2",
+      "github": "https://github.com/ybedoyab/aligo-c2",
       "demo": null,
       "description": {
-        "en": "Travel app that uses tourism data to suggest personalized itineraries, food picks, and activities based on each user's preferences.",
-        "es": "App turística que usa datos para sugerir itinerarios personalizados, recomendaciones gastronómicas y actividades según las preferencias del usuario."
+        "en": "Authorized-lab C2 platform with a blockchain proof-of-execution ledger: modular nodes, reusable missions, on-chain verifiable evidence, and an AI agent that proposes missions under human approval.",
+        "es": "Plataforma C2 de laboratorio autorizado con ledger blockchain de prueba de ejecución: nodos modulares, misiones reutilizables, evidencia verificable on-chain y un agente de IA que propone misiones bajo aprobación humana."
       },
-      "techStack": ["Django", "Leaflet", "NLTK"],
+      "techStack": ["FastAPI", "Hardhat", "WebSocket", "Docker"],
       "highlights": {
         "en": [
-          "Interactive maps via Google Maps API + Leaflet",
-          "Django backend handling all data and services",
-          "NLP and ML for personalized recommendations"
+          "Blockchain ledger anchoring every execution hash for tamper-evident evidence",
+          "FastAPI + WebSocket server orchestrating modular nodes and safe plugins",
+          "Claude-based agent proposing missions, gated behind human approval",
+          "Simulated IoT gateway and lab-safe vulnerability scanning"
         ],
         "es": [
-          "Mapas interactivos con Google Maps API + Leaflet",
-          "Backend Django gestionando datos y servicios",
-          "NLP y machine learning para recomendaciones personalizadas"
+          "Ledger blockchain que ancla el hash de cada ejecución para evidencia inalterable",
+          "Servidor FastAPI + WebSocket que orquesta nodos modulares y plugins seguros",
+          "Agente basado en Claude que propone misiones, siempre bajo aprobación humana",
+          "Gateway IoT simulado y escaneo de vulnerabilidades lab-safe"
         ]
       },
-      "yearCompleted": 2024,
+      "yearCompleted": 2026,
       "readmePath": {
-        "en": "assets/data/readmes/project-2.en.md",
-        "es": "assets/data/readmes/project-2.es.md"
-      },
-      "sourceLanguage": "es",
-      "extraLinks": []
-    },
-    {
-      "id": "project-3",
-      "name": "Serenus",
-      "github": "https://github.com/Juanqu261/serenus",
-      "demo": null,
-      "description": {
-        "en": "Application for prevention of and support against student stress, combining analytics with an AI companion chatbot.",
-        "es": "Aplicación para la prevención y acompañamiento del estrés estudiantil, combinando analítica con un chatbot de acompañamiento."
-      },
-      "techStack": ["Django", "React", "Google Gemini API"],
-      "highlights": {
-        "en": [
-          "AI-driven detection of academic stress patterns",
-          "Django backend managing all data and services",
-          "Companion chatbot powered by Google Gemini"
-        ],
-        "es": [
-          "Identificación de patrones de estrés académico mediante IA",
-          "Backend Django gestionando datos y servicios",
-          "Chatbot de acompañamiento con Google Gemini"
-        ]
-      },
-      "yearCompleted": 2025,
-      "readmePath": {
-        "en": "assets/data/readmes/project-3.en.md",
-        "es": "assets/data/readmes/project-3.es.md"
+        "en": "assets/data/readmes/project-6.en.md",
+        "es": "assets/data/readmes/project-6.es.md"
       },
       "sourceLanguage": "es",
       "extraLinks": []
@@ -146,8 +120,8 @@
       },
       "yearCompleted": 2026,
       "readmePath": {
-        "en": "assets/data/readmes/project-6.en.md",
-        "es": "assets/data/readmes/project-6.es.md"
+        "en": "assets/data/readmes/project-5.en.md",
+        "es": "assets/data/readmes/project-5.es.md"
       },
       "sourceLanguage": "en",
       "extraLinks": [
@@ -156,6 +130,97 @@
           "label": { "en": "Backend repo", "es": "Repo del backend" }
         }
       ]
+    },
+    {
+      "id": "project-1",
+      "name": "BrokerWiz",
+      "github": "https://github.com/Juanqu261/bots_brokerwiz",
+      "demo": null,
+      "description": {
+        "en": "Insurance-quote automation platform: Selenium bots orchestrated through an MQTT task queue and a FastAPI REST gateway.",
+        "es": "Sistema de automatización para cotización de seguros usando bots Selenium, con API REST en FastAPI y cola de tareas MQTT."
+      },
+      "techStack": ["FastAPI", "MQTT", "Selenium"],
+      "highlights": {
+        "en": [
+          "MQTT broker for task fan-out and worker management",
+          "Selenium bot orchestration via shell scripts and utility layers",
+          "FastAPI REST gateway for triggering and tracking quotes"
+        ],
+        "es": [
+          "Broker MQTT para distribución de tareas y gestión de workers",
+          "Orquestación de bots Selenium con scripts y utilidades",
+          "API REST en FastAPI para iniciar y consultar cotizaciones"
+        ]
+      },
+      "yearCompleted": 2026,
+      "readmePath": {
+        "en": "assets/data/readmes/project-1.en.md",
+        "es": "assets/data/readmes/project-1.es.md"
+      },
+      "sourceLanguage": "es",
+      "extraLinks": []
+    },
+    {
+      "id": "project-3",
+      "name": "Serenus",
+      "github": "https://github.com/Juanqu261/serenus",
+      "demo": null,
+      "description": {
+        "en": "Application for prevention of and support against student stress, combining analytics with an AI companion chatbot.",
+        "es": "Aplicación para la prevención y acompañamiento del estrés estudiantil, combinando analítica con un chatbot de acompañamiento."
+      },
+      "techStack": ["Django", "React", "Google Gemini API"],
+      "highlights": {
+        "en": [
+          "AI-driven detection of academic stress patterns",
+          "Django backend managing all data and services",
+          "Companion chatbot powered by Google Gemini"
+        ],
+        "es": [
+          "Identificación de patrones de estrés académico mediante IA",
+          "Backend Django gestionando datos y servicios",
+          "Chatbot de acompañamiento con Google Gemini"
+        ]
+      },
+      "yearCompleted": 2025,
+      "readmePath": {
+        "en": "assets/data/readmes/project-3.en.md",
+        "es": "assets/data/readmes/project-3.es.md"
+      },
+      "sourceLanguage": "es",
+      "extraLinks": []
+    },
+    {
+      "id": "project-2",
+      "name": "Explore Antioquia",
+      "github": "https://github.com/juquinterope/Explore_antioquia",
+      "demo": null,
+      "hidden": true,
+      "description": {
+        "en": "Travel app that uses tourism data to suggest personalized itineraries, food picks, and activities based on each user's preferences.",
+        "es": "App turística que usa datos para sugerir itinerarios personalizados, recomendaciones gastronómicas y actividades según las preferencias del usuario."
+      },
+      "techStack": ["Django", "Leaflet", "NLTK"],
+      "highlights": {
+        "en": [
+          "Interactive maps via Google Maps API + Leaflet",
+          "Django backend handling all data and services",
+          "NLP and ML for personalized recommendations"
+        ],
+        "es": [
+          "Mapas interactivos con Google Maps API + Leaflet",
+          "Backend Django gestionando datos y servicios",
+          "NLP y machine learning para recomendaciones personalizadas"
+        ]
+      },
+      "yearCompleted": 2024,
+      "readmePath": {
+        "en": "assets/data/readmes/project-2.en.md",
+        "es": "assets/data/readmes/project-2.es.md"
+      },
+      "sourceLanguage": "es",
+      "extraLinks": []
     }
   ]
 }

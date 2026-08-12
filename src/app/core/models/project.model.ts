@@ -22,6 +22,8 @@ export interface ProjectRaw {
   readmePath: Record<Lang, string> | null;
   sourceLanguage: Lang;
   extraLinks?: ExtraLinkRaw[];
+  /** Kept in the data set but left out of the projects grid; deep links still resolve. */
+  hidden?: boolean;
 }
 
 export interface Project {
@@ -36,6 +38,7 @@ export interface Project {
   readmePath: string | null;
   sourceLanguage: Lang;
   extraLinks: ExtraLink[];
+  hidden: boolean;
 }
 
 export function localizeProject(raw: ProjectRaw, lang: Lang): Project {
@@ -56,5 +59,6 @@ export function localizeProject(raw: ProjectRaw, lang: Lang): Project {
       url: link.url,
       label: link.label[lang] ?? link.label.en,
     })),
+    hidden: raw.hidden ?? false,
   };
 }

@@ -16,7 +16,7 @@ import { ProjectCardComponent } from './project-card.component';
       </header>
 
       <div class="projects-grid">
-        @for (project of portfolio.projects(); track project.id) {
+        @for (project of portfolio.visibleProjects(); track project.id) {
           <app-project-card [project]="project" />
         }
       </div>
